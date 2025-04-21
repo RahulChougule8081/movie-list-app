@@ -1,12 +1,25 @@
-# React + Vite
+1. Clone the Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+git clone https://github.com/RahulChougule8081/movie-list-app.git
+cd movie-list-app
 
-Currently, two official plugins are available:
+2. Install Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install
 
-## Expanding the ESLint configuration
+3. Configure Environment Variables
+Create a .env file in the root directory with the following content:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+VITE_TMDB_API_KEY=your_tmdb_api_key_here 
+(Get your free API key from TMDB)
+
+4. Run the Development Server
+
+npm run dev
+
+5. Running Tests
+This project uses Jest and React Testing Library.
+
+To run the tests:
+
+npm test
